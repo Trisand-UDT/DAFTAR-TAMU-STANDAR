@@ -1,0 +1,74 @@
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      .purple-border textarea {
+        border: 1px solid #ba68c8;
+      }
+
+      .purple-border .form-control:focus {
+        border: 1px solid #ba68c8;
+        box-shadow: 0 0 0 0.2rem rgba(186, 104, 200, .25);
+      }
+    </style>
+  </head>
+  <body>
+	<center>
+  <font face="comic sans ms">
+    <button class="btn btn-primary" id="copyID" style="margin: 0px;">
+      <i class="fa fa-copy"></i>SALIN
+    </button>
+    <textarea class="form-control" id="textareainput" rows="13" cols="20">Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara kami.
+
+Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan menghadiri dan memberikan do'a restunya untuk keberkahan pernikahan kami.
+
+*Mohon maaf perihal undangan hanya di bagikan melalui pesan ini.*
+
+Terima kasih banyak atas perhatiannya.
+
+*Berikut link undangan kami*, untuk info lengkap dari acara bisa klik Link Berikut :
+https://trisand-udt.github.io/FITUR-STANDAR/?to=NAMA+TAMU</textarea>
+    </div>
+
+<h4> <font color="red"><i>Cara Buat Nama Tamu Undangan :<i></font> </h4>
+
+<h5> <i>Ganti Bagian Link <font color="blue">(NAMA+TAMU)</font> Catatan Diatas Paling Bawah, Dengan Nama Yang Akan Di Undang, Lalu Klik SALIN Diatas.</i> </h5>
+
+<h5> <i>Kemudian Tempel Di WA/FB/IG Atau Yang Lain, Link Undangan Sudah Siap Di Bagikan.</i> </h5>
+
+<h5> <i>Maksud Dari Adanya Kode Plus <font color="blue">( + )</font> Ditengah itu Untuk Buat Spasi.</i> </h5>
+
+<h4> <font color="red"><i>Contoh :<i></font> </h4>
+
+<h5> <font color="blue"><i>(https://trisand-udt.github.io/FITUR-STANDAR/?to=BAPAK+TRISAND+SERVICE)<i></font> </h5>
+<a href="https://trisand-udt.github.io/FITUR-STANDAR/?to=BAPAK+TRISAND+SERVICE" target="_blank" class="btn btn-primary"> <i>Lihat Contoh Link Undangan</i> </a>
+<br/>
+<p><b><i>Bagikan Ke Media Sosial Dibawah<i></b></p>
+
+        <h3 class="mt-2">
+        <div class="col text-center">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=&text=Klik'Dan'Tahan'Tulisan'ini'Lalu'Tempel'Disini" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="https://web.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+        </div>
+        </h3>
+
+    <script>
+      var button = document.getElementById("copyID"),
+        input = document.getElementById("textareainput");
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+        input.select();
+        document.execCommand("copy");
+        alert("TERSALIN, Silahkan Tempel Dan Bagikan.");
+      });
+    </script>
+  </body>
+</html>
